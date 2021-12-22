@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "dev" : "http-server . -p 8090",
+    "ngrok" : "ngrok http http://0.0.0.0:8090",
+    "start": "npm run dev & npm run ngrok",
+    "show-proccess": "netstat -tulnp | grep 8090"
+  }
+}
